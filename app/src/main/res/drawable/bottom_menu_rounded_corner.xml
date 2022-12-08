@@ -1,0 +1,8 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="@color/login_back_strap" />
+    <corners
+        android:topLeftRadius="@dimen/seventeen_dp"
+        android:topRightRadius="@dimen/seventeen_dp" />
+
+</shape>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#FBC02D</color>
+    <color name="colorPrimaryDark">#F9A825</color>
+    <color name="colorAccent">#F57F17</color>
+    <color name="bjs">#fdba30</color>
+    <color name="black">#000000</color>
+    <color name="translucent_white">#00FFFFFF</color>
+    <color name="translucent">#66000000</color>
+    <color name="barcode_reticle_background">#99000000</color>
+
+    <color name="login_back_strap">#3A3730</color>
+    <color name="light_background_color">#FCFBFB</color>
+    <color name="semi_gray">#979797</color>
+
+    <color name="green">#58C574</color>
+    <color name="red">#FE5442</color>
+
+
+    <color name="rating_red_background">#F6D4D5</color>
+
+    <color name="colorOverlay">#d2ffffff</color>
+    <color name="light_green">#DDF2E3</color>
+    <color name="light_yellow">#FDF1D5</color>
+    <color name="dark_yellow">#C49532</color>
+
+    <color name="dark_green">#40783B</color>
+
+    <color name="textPrimary">#2D2D2D</color>
+    <color name="textSecondary">#867A6F</color>
+    <color name="blue">#6396E5</color>
+    <color name="bjs_trans">#99fdba30</color>
+
+    <color name="button_inactive">#757575</color>
+    <color name="green_light">#1affa7</color>
+    <color name="red_light">#ff6c5c</color>
+    <color name="icPressed">#AAFFFFFF</color>
+    <color name="icActive">#FFFFFFFF</color>
+    <color name="icFocused">#DDFFFFFF</color>
+
+    <color name="lgv_back_color">#615E5A</color>
+
+    <color name="delivery_type_color">#867A6F</color>
+
+    <color name="cyan_grey">#EAE9E9</color>
+    <color name="light_brown">#867A6F</color>
+    <color name="scanner_line">#F57F17</color>
+
+    <color name="orders_back_strap">#F3F1F0</color>
+    <color name="textColor">#FF857B6E</color>
+
+
+    <color name="blackSecondary">#3A3630</color>
+    <color name="fontColor">#D8D7D6</color>
+    <color name="borderGrayLight">#00000029</color>
+    <color name="error">#E95252</color>
+    <color name="borderRed">#F19D9D</color>
+    <color name="pink">
+        #DC69AE
+    </color>
+    <color name="notification_bar">#3A3630</color>
+
+
+    <!--V2 compose new colors-->
+    <color name="newLightGray">#F5F0EA</color>
+    <color name="light_grey">#DEDDDA</color>
+    <color name="button_dark_grey">#AFADAB</color>
+    <color name="text_grey">#867969</color>
+    <color name="text_dark">#3A3630</color>
+    <color name="text_dark_op_65">#A63A3630</color>
+    <color name="route_icon_sky_blue">#55cff5</color>
+    <color name="yellow_wh_icon">#FDBB30</color>
+    <color name="light_black">#615E59
+    </color>
+
+
+    <color name="trams_black">#253A3630</color>
+    <color name="dark_brown">#9D4906</color>
+    <color name="sky_blue">#83EFF4</color>
+    <color name="bg_light_white">#F0F0F0</color>
+    <color name="lime_green">#57DB7A</color>
+    <color name="green_white">#d7d7d5</color>
+    <color name="sugar_cane">#ebebea</color>
+    <color name="color_successful_heading">#FDFDFD</color>
+    <color name="shooner">#888075</color>
+
+    <color name="dark_grayish_orange">#969491</color>
+    <color name="light_white">#FDFDFD</color>
+    <color name="americano">#877B6F</color>
+
+
+</resources>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    app:cardElevation="@dimen/five_dp"
+    app:cardCornerRadius="@dimen/five_dp"
+    android:layout_height="400dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="#F6F6F4">
+
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_time_to_deliver" />
+
+            <TextView
+                android:id="@+id/tv_drop_count"
+                android:layout_width="@dimen/seventy_dp"
+                android:layout_height="@dimen/seventy_dp"
+                android:layout_marginStart="@dimen/fifteen_dp"
+                android:layout_marginTop="@dimen/fifteen_dp"
+                android:layout_marginEnd="@dimen/fifteen_dp"
+                android:layout_marginBottom="@dimen/fifteen_dp"
+                android:background="@drawable/textview_product_unit_background"
+                android:fontFamily="@font/amiko"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="98KG"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sixteen_sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:padding="@dimen/fifteen_dp">
+
+            <TextView
+                android:id="@+id/tv_product_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/amiko"
+                android:gravity="center"
+                android:text="DOMYOS"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sixteen_sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/amiko"
+                android:gravity="center"
+                android:text="DOMY14689-3"
+                android:textAllCaps="true"
+                android:textSize="@dimen/fourteen_sp" />
+
+            <TextView
+                android:id="@+id/tv_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_product_name"
+                android:layout_marginTop="@dimen/fifteen_dp"
+                android:fontFamily="@font/amiko"
+                android:gravity="center"
+                android:maxLines="3"
+                android:text="Performance Treadmil T900C"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fourteen_sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_details"
+                android:layout_marginTop="@dimen/fifteen_dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/forty_dp"
+                    android:layout_weight="0.4"
+                    android:background="@color/delivery_type_color"
+                    android:gravity="center"
+                    android:paddingStart="@dimen/fifteen_dp"
+                    android:paddingEnd="@dimen/fifteen_dp">
+
+
+                    <ImageView
+                        android:layout_width="@dimen/twenty_dp"
+                        android:layout_height="@dimen/twenty_dp"
+                        android:src="@drawable/ic_deliveryicon"
+                        app:tint="@color/white" />
+
+                    <TextView
+                        android:id="@+id/tv_delivery_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingStart="@dimen/ten_dp"
+                        android:paddingTop="@dimen/five_dp"
+                        android:paddingEnd="@dimen/ten_dp"
+                        android:paddingBottom="@dimen/five_dp"
+                        android:text="@string/delivery"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/fourteen_sp"
+                        android:textStyle="bold"
+                        app:fontFamily="@font/amiko" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/forty_dp"
+                    android:layout_weight="0.6"
+                    android:gravity="center"
+                    android:paddingStart="@dimen/fifteen_dp"
+                    android:paddingEnd="@dimen/fifteen_dp">
+
+
+                    <ImageView
+                        android:layout_width="@dimen/twenty_dp"
+                        android:layout_height="@dimen/twenty_dp"
+                        android:src="@drawable/ic_barcode_icon"
+                        app:tint="@color/delivery_type_color" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/five_dp"
+                        android:gravity="center"
+                        android:paddingTop="@dimen/five_dp"
+                        android:paddingBottom="@dimen/five_dp"
+                        android:text="GFW000324550001"
+                        android:textSize="@dimen/fourteen_sp"
+                        android:textStyle="bold"
+                        app:fontFamily="@font/amiko" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

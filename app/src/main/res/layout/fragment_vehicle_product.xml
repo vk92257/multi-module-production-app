@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="NestedWeights">
+
+
+    <include
+        android:id="@+id/header_layout"
+        layout="@layout/item_login_header_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:background="@color/login_back_strap"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/vehicle_location"
+            android:textColor="@color/white"
+            android:textSize="@dimen/eighteen_sp"
+            app:fontFamily="@font/amiko" />
+
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:maxLines="2"
+            android:paddingStart="@dimen/five_dp"
+            android:paddingEnd="@dimen/five_dp"
+            android:text="@string/unknown"
+            android:textColor="@color/white"
+            android:textSize="@dimen/eighteen_sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/amiko" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:background="#F7F7F7"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+
+            <RelativeLayout
+                android:id="@+id/rl_vehicle_verified"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_centerInParent="true"
+                android:visibility="gone">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:src="@color/white"
+                    app:civ_border_color="@color/green"
+                    app:civ_border_width="3dp" />
+
+                <ImageView
+                    android:id="@+id/iv_verified"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/twenty_five_dp"
+                    android:src="@drawable/ic_verified" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_verified"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/fifteen_dp"
+                    android:gravity="center"
+                    android:text="@string/verified"
+                    android:textAllCaps="true"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/eighteen_sp"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/amiko" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_vehicle_barcode"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/background_multi_circle"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="@drawable/circular_ripple_effect"
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/twenty_five_dp"
+                    android:src="@drawable/ic_barcode" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:padding="@dimen/five_dp"
+            android:text="@string/scan_vehicle_text"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sixteen_sp"
+            app:fontFamily="@font/amiko" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:background="#F3F3F3"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:id="@+id/rl_item_verified"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_centerInParent="true"
+                android:visibility="gone">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:src="@color/white"
+                    app:civ_border_color="@color/green"
+                    app:civ_border_width="3dp" />
+
+                <ImageView
+                    android:id="@+id/iv_item_verified"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/twenty_five_dp"
+                    android:src="@drawable/ic_verified" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_item_verified"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/fifteen_dp"
+                    android:gravity="center"
+                    android:text="@string/verified"
+                    android:textAllCaps="true"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/eighteen_sp"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/amiko" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_item_barcode"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/background_multi_circle"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="@drawable/circular_ripple_effect"
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/twenty_five_dp"
+                    android:src="@drawable/ic_barcode" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:padding="@dimen/five_dp"
+            android:text="@string/scan_item_text"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sixteen_sp"
+            app:fontFamily="@font/amiko" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:orientation="vertical">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/twenty_dp"
+            android:src="@drawable/ic_arrow_back"
+            app:backgroundTint="@color/login_back_strap"
+            app:fabCustomSize="@dimen/eighty_dp"
+            app:tint="@color/white" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/twenty_dp"
+            android:src="@drawable/ic_yes"
+            app:backgroundTint="@color/green"
+            app:fabCustomSize="@dimen/eighty_dp"
+            app:tint="@color/white" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

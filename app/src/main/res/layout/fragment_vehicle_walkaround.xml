@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="NestedWeights">
+
+
+    <include
+        android:id="@+id/header_layout"
+        layout="@layout/item_login_header_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:background="@color/login_back_strap"
+        android:gravity="center"
+        android:text="@string/vehicle_walkaround"
+        android:textColor="@color/white"
+        android:textSize="@dimen/twenty_sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/amiko" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_vehicle_barcode"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/fifty_dp"
+            android:background="@drawable/background_multi_circle"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="@drawable/circular_ripple_effect"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_camera"
+                app:tint="@color/white" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/forty_dp"
+            android:text="@string/take_vehicle_image_text"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sixteen_sp"
+            app:fontFamily="@font/amiko" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_images"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:visibility="visible"
+            tools:listitem="@layout/item_image_adapter" />
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:orientation="vertical">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/twenty_dp"
+            android:src="@drawable/ic_arrow_back"
+            app:backgroundTint="@color/login_back_strap"
+            app:fabCustomSize="@dimen/eighty_dp"
+            app:tint="@color/white" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/twenty_dp"
+            android:src="@drawable/ic_yes"
+            app:backgroundTint="@color/green"
+            app:fabCustomSize="@dimen/eighty_dp"
+            app:tint="@color/white" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

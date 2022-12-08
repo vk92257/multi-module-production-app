@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    app:cardBackgroundColor="@color/black"
+    app:cardElevation="@dimen/ten_dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="260dp"
+            android:scaleType="fitXY" />
+
+        <RelativeLayout
+            android:id="@+id/rl_actions"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:background="@color/translucent"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="bottom">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_thumbnails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/rl_add"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/twenty_dp"
+                android:layout_marginEnd="@dimen/twenty_dp" />
+
+            <RelativeLayout
+                android:id="@+id/rl_add"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/thirty_dp"
+                android:layout_marginBottom="@dimen/twenty_dp">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab_photo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_camera"
+                    android:transitionName="loginFab"
+                    app:backgroundTint="@color/bjs"
+                    app:fabCustomSize="70dp"
+                    app:tint="@color/white" />
+
+                <ImageView
+                    android:layout_width="@dimen/eighteen_dp"
+                    android:layout_height="@dimen/eighteen_dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="@dimen/eighteen_dp"
+                    android:elevation="@dimen/ten_dp"
+                    android:src="@drawable/ic_add"
+                    app:tint="@color/white" />
+
+
+
+            </RelativeLayout>
+
+
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/thirty_dp"
+                android:layout_marginBottom="@dimen/twenty_dp"
+                android:src="@drawable/ic_camera_add"
+                android:visibility="gone"
+                app:backgroundTint="@color/bjs"
+                app:fabCustomSize="@dimen/eighty_dp"
+                app:tint="@color/white" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_finish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/thirty_dp"
+                android:layout_marginBottom="@dimen/twenty_dp"
+                android:src="@drawable/ic_yes"
+                app:backgroundTint="@color/bjs"
+                app:fabCustomSize="@dimen/eighty_dp"
+                app:tint="@color/white" />
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/fifteen_dp"
+            android:src="@drawable/ic_arrow_back"
+            android:visibility="gone"
+            app:tint="@color/white" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/translucent"
+            android:gravity="center"
+            android:text="Image Preview"
+            android:textAllCaps="true"
+            android:textColor="@color/light_background_color"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

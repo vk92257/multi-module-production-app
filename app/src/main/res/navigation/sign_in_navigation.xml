@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sign_in_navigation"
+    app:startDestination="@id/phoneNumberVerificationFragment">
+
+    <fragment
+        android:id="@+id/phoneNumberVerificationFragment"
+        android:name="com.bjs.pdanative.presentation.ui.login.PhoneNumberVerificationFragment"
+        android:label="PhoneNumberVerificationFragment">
+        <action
+            android:id="@+id/action_phoneNumberVerificationFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_phoneNumberVerificationFragment_to_verifyPasscodeFragment"
+            app:destination="@id/verifyPasscodeFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/frontCameraFragment"
+        android:name="com.bjs.pdanative.presentation.ui.camera.FrontCameraFragment"
+        android:label="FrontCameraFragment">
+        <action
+            android:id="@+id/action_frontCameraFragment_to_loginSuccessFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.bjs.pdanative.presentation.ui.login.LoginFragment"
+        android:label="LoginFragment">
+        <action
+            android:id="@+id/action_loginFragment_to_loggedInFragment"
+            app:destination="@id/loggedInFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/loggedInFragment"
+        android:name="com.bjs.pdanative.presentation.ui.login.LoggedInUserFragment"
+        android:label="LoggedInFragment">
+        <action
+            android:id="@+id/action_loggedInFragment_to_bottomSheetBackFragment"
+            app:destination="@id/bottomSheetBackFragment" />
+        <action
+            android:id="@+id/action_loggedInFragment_to_phoneNumberVerificationFragment"
+            app:destination="@id/phoneNumberVerificationFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_loggedInFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_loggedInFragment_to_vehicleAndProductScanFragment"
+            app:destination="@id/vehicleAndProductScanFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/otpFragment"
+        android:name="com.bjs.pdanative.presentation.ui.login.OtpFragment"
+        android:label="OtpFragment">
+        <action
+            android:id="@+id/action_otpFragment_to_resetPinFragment"
+            app:destination="@id/resetPinFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/resetPinFragment"
+        android:name="com.bjs.pdanative.presentation.ui.login.ResetPinFragment"
+        android:label="ResetPinFragment" />
+
+    <dialog
+        android:id="@+id/bottomSheetBackFragment"
+        android:name="com.bjs.pdanative.presentation.ui.login.BottomSheetBackFragment"
+        android:label="BottomSheetBackFragment"
+        tools:layout="@layout/fragment_bottom_sheet_back" />
+
+    <fragment
+        android:id="@+id/vehicleAndProductScanFragment"
+        android:name="com.bjs.pdanative.presentation.ui.login.VehicleAndProductScanFragment"
+        android:label="VehicleAndProductScanFragment">
+        <action
+            android:id="@+id/action_vehicleAndProductScanFragment_to_vehicleWalkAroundFragment"
+            app:destination="@id/vehicleWalkAroundFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_vehicleAndProductScanFragment_to_barcodeScanningFragment"
+            app:destination="@id/barcodeScanningFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/vehicleWalkAroundFragment"
+        android:name="com.bjs.pdanative.presentation.ui.login.VehicleWalkAroundFragment"
+        android:label="VehicleWalkAroundFragment">
+        <action
+            android:id="@+id/action_vehicleWalkAroundFragment_to_cameraFragment"
+            app:destination="@id/cameraFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_vehicleWalkAroundFragment_to_preRouteCheckFragment"
+            app:destination="@id/preRouteCheckFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/cameraFragment"
+        android:name="com.bjs.pdanative.presentation.ui.camera.CameraFragment"
+        android:label="CameraFragment" />
+    <fragment
+        android:id="@+id/barcodeScanningFragment"
+        android:name="com.bjs.pdanative.presentation.ui.barcodescanner.BarcodeScanningFragment"
+        android:label="BarcodeScanningFragment" />
+    <fragment
+        android:id="@+id/LGVCheckFragment"
+        android:name="com.bjs.pdanative.presentation.ui.lgvcheck.LGVCheckFragment"
+        android:label="LGVCheckFragment">
+        <action
+            android:id="@+id/action_LGVCheckFragment_to_cameraFragment"
+            app:destination="@id/cameraFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/preRouteCheckFragment"
+        android:name="com.bjs.pdanative.presentation.ui.preroutecheck.PreRouteCheckFragment"
+        android:label="PreRouteCheckFragment">
+        <action
+            android:id="@+id/action_preRouteCheckFragment_to_LGVCheckFragment"
+            app:destination="@id/LGVCheckFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/routeShunterConfirmation"
+        android:name="com.bjs.pdanative.presentation.ui.login.RouteShunterConfirmation"
+        android:label="RouteShunterConfirmation">
+        <action
+            android:id="@+id/action_routeShunterConfirmation_to_phoneNumberVerificationFragment"
+            app:destination="@id/phoneNumberVerificationFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_routeShunterConfirmation_to_verifyVehicleRegFragment"
+            app:destination="@id/verifyVehicleRegFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/verifyPasscodeFragment"
+        android:name="com.bjs.pdanative.presentation.ui.login.VerifyPasscodeFragment"
+        android:label="VerifyPasscodeFragment">
+        <action
+            android:id="@+id/action_verifyPasscodeFragment_to_frontCameraFragment"
+            app:destination="@id/frontCameraFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/verifyVehicleRegFragment"
+        android:name="com.bjs.pdanative.presentation.ui.login.VerifyVehicleRegFragment"
+        android:label="VerifyVehicleRegFragment">
+        <action
+            android:id="@+id/action_verifyVehicleRegFragment_to_verifyPasscodeFragment"
+            app:destination="@id/verifyPasscodeFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+
+</navigation>

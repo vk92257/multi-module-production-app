@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:layout_margin="@dimen/three_dp"
+    android:gravity="center_vertical">
+
+
+    <TextView
+        android:id="@+id/tv_fault_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/amiko"
+        android:gravity="center_vertical"
+        android:text="@string/exterior_check"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_fault_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_fault_text"
+        android:layout_marginTop="@dimen/ten_dp"
+        android:fontFamily="@font/amiko"
+        android:text="PASS"
+        android:gravity="center_vertical"
+        android:padding="2dp"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/twenty_sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

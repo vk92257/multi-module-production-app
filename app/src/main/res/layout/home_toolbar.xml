@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/AppTheme.AppBarOverlay">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/seventy_dp"
+        android:background="@color/white"
+        app:contentInsetStart="0dp"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_bjs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/fifteen_dp"
+                android:gravity="center"
+                android:text="@string/bjs"
+                android:textAllCaps="true"
+                android:textColor="@color/bjs"
+                android:textSize="@dimen/twenty_two_sp"
+                android:textStyle="bold"
+                app:fontFamily="@font/amiko" />
+
+            <TextView
+                android:id="@+id/tv_pda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/two_dp"
+                android:layout_toEndOf="@+id/tv_bjs"
+                android:gravity="center"
+                android:text="@string/pda"
+                android:textAllCaps="true"
+                android:textColor="@color/lgv_back_color"
+                android:textSize="@dimen/twenty_two_sp"
+                android:textStyle="bold"
+                app:fontFamily="@font/amiko" />
+
+            <TextView
+                android:id="@+id/tv_delivery_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/fifteen_dp"
+                android:background="@drawable/background_delivery_type_corner"
+                android:gravity="center"
+                android:paddingStart="@dimen/ten_dp"
+                android:paddingTop="@dimen/five_dp"
+                android:paddingEnd="@dimen/ten_dp"
+                android:paddingBottom="@dimen/five_dp"
+                android:text="@string/delivery"
+                android:textAllCaps="true"
+                android:textColor="@color/delivery_type_color"
+                android:textSize="@dimen/fourteen_sp"
+                android:textStyle="bold"
+                app:fontFamily="@font/amiko" />
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_route"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sixty_five_dp"
+        android:background="@color/login_back_strap"
+        app:contentInsetStart="0dp"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="@dimen/fifteen_dp"
+            android:paddingEnd="@dimen/fifteen_dp">
+
+            <TextView
+                android:id="@+id/tv_route_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@color/delivery_type_color"
+                android:gravity="center"
+                android:paddingStart="@dimen/ten_dp"
+                android:paddingTop="@dimen/seven_dp"
+                android:paddingEnd="@dimen/ten_dp"
+                android:paddingBottom="@dimen/seven_dp"
+                android:text="@string/route"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sixteen_sp"
+                android:textStyle="bold"
+                app:fontFamily="@font/amiko" />
+
+            <TextView
+                android:id="@+id/tv_route"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/ten_dp"
+                android:layout_toEndOf="@+id/tv_route_text"
+                android:gravity="center"
+                android:text="13/01 B-002"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sixteen_sp"
+                android:textStyle="bold"
+                app:fontFamily="@font/amiko" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/ten_dp"
+                android:layout_toStartOf="@+id/tv_pda_name"
+                android:background="@color/delivery_type_color"
+                android:gravity="center"
+                android:paddingStart="@dimen/ten_dp"
+                android:paddingTop="@dimen/seven_dp"
+                android:paddingEnd="@dimen/ten_dp"
+                android:paddingBottom="@dimen/seven_dp"
+                android:text="Device"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sixteen_sp"
+                android:textStyle="bold"
+                app:fontFamily="@font/amiko" />
+
+            <TextView
+                android:id="@+id/tv_pda_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="D068"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sixteen_sp"
+                android:textStyle="bold"
+                app:fontFamily="@font/amiko" />
+
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+</com.google.android.material.appbar.AppBarLayout>

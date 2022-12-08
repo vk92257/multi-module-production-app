@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/seventy_dp"
+    android:background="@color/login_back_strap"
+    android:paddingStart="@dimen/ten_dp"
+    android:paddingEnd="@dimen/ten_dp">
+
+    <ImageView
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/fifteen_dp"
+        android:src="@drawable/ic_arrow_back"
+        app:tint="@color/white" />
+
+    <TextView
+        android:id="@+id/tv_drop_count"
+        android:layout_width="@dimen/forty_dp"
+        android:layout_height="@dimen/forty_dp"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/btn_back"
+        android:background="@drawable/textview_count_background"
+        android:fontFamily="@font/amiko"
+        android:gravity="center"
+        android:maxLength="3"
+        android:maxLines="1"
+        android:text="#18"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/fourteen_sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_post_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/ten_dp"
+        android:layout_toEndOf="@+id/tv_drop_count"
+        android:fontFamily="@font/amiko"
+        android:gravity="center"
+        android:text="M21 9JW"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/eighteen_sp"
+        android:textStyle="bold" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_time"
+        android:layout_width="@dimen/hundred_dp"
+        android:layout_height="@dimen/thirty_five_dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        app:cardBackgroundColor="@color/green"
+        app:cardCornerRadius="@dimen/twenty_dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/twenty_dp"
+                android:layout_height="@dimen/twenty_dp"
+                android:src="@drawable/ic_watch" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/five_dp"
+                android:fontFamily="@font/amiko"
+                android:gravity="center"
+                android:text="08:19"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sixteen_sp" />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/ten_dp"
+        android:layout_toStartOf="@+id/cv_time"
+        android:fontFamily="@font/amiko"
+        android:gravity="center"
+        android:text="@string/six_nine"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sixteen_sp" />
+
+
+</RelativeLayout>

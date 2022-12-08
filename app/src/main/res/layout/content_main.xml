@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_home">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/nav_host_fragment"
+                android:name="androidx.navigation.fragment.NavHostFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/bottom_navigation"
+                android:layout_marginBottom="-10dp"
+                android:background="#F8F8F7"
+                app:defaultNavHost="true"
+                app:navGraph="@navigation/home_navigation" />
+
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottom_navigation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/bottom_menu_rounded_corner"
+                app:itemIconTint="@color/white"
+                app:itemTextColor="@color/white"
+                app:labelVisibilityMode="unlabeled"
+                app:menu="@menu/home_bottom_menu" />
+
+
+        </RelativeLayout>
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:backgroundTint="@color/bjs"
+            android:contentDescription="@string/floating_button"
+            android:src="@drawable/ic_camera"
+            android:transitionName="loginFab"
+            app:backgroundTint="@color/white"
+            app:borderWidth="@dimen/five_dp"
+            app:elevation="@dimen/fifteen_dp"
+            app:fabCustomSize="@dimen/seventy_five_dp"
+            app:layout_anchor="@id/bottom_navigation"
+            app:layout_anchorGravity="center|top"
+            app:maxImageSize="@dimen/thirty_five_dp"
+            app:tint="@color/white" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl_slider_bar"
+            android:layout_width="@dimen/seventy_dp"
+            android:layout_height="@dimen/fifty_dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:layout_anchor="@id/bottom_navigation"
+            app:layout_anchorGravity="center|bottom">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_slider_bar"
+                android:layout_width="@dimen/twenty_five_dp"
+                android:layout_height="@dimen/twenty_five_dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/ten_dp"
+                android:src="@drawable/ic_menu"
+                android:tint="@color/white" />
+
+
+        </RelativeLayout>
+
+
+        <!--
+                <include
+                    android:id="@+id/slider_bar"
+                    layout="@layout/bottom_sheet_home" />
+        -->
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</RelativeLayout>

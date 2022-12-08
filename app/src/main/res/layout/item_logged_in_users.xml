@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/ten_dp"
+    app:cardBackgroundColor="#E8E8E8"
+    app:cardElevation="@dimen/five_dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/ten_dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_profile"
+            android:layout_width="@dimen/hundred_dp"
+            android:layout_height="@dimen/hundred_dp"
+            android:layout_alignParentStart="true">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="@dimen/forty_dp"
+                android:layout_height="@dimen/forty_dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="@dimen/five_dp"
+                android:layout_marginBottom="@dimen/fifteen_dp"
+                android:src="@color/login_back_strap" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="@dimen/thirty_five_dp"
+                android:layout_height="@dimen/thirty_five_dp"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="@dimen/ten_dp"
+                android:src="@color/bjs" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/cv_profile"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/user"
+                app:civ_border_color="@color/black"
+                app:civ_border_width="0.8dp" />
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/fifteen_dp"
+            android:layout_marginTop="@dimen/thirty_dp"
+            android:layout_toEndOf="@+id/rl_profile"
+            android:gravity="center"
+            android:text="******7777"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sixteen_sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/amiko" />
+
+
+        <ImageView
+            android:id="@+id/iv_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/twenty_dp"
+            android:src="@drawable/ic_logout" />
+
+        <TextView
+            android:id="@+id/tv_role"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_profile"
+            android:layout_marginStart="@dimen/fifteen_dp"
+            android:layout_marginTop="@dimen/five_dp"
+            android:layout_marginBottom="@dimen/fifteen_dp"
+            android:background="@color/login_back_strap"
+            android:gravity="center"
+            android:padding="@dimen/ten_dp"
+            android:text="@string/driver"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sixteen_sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/amiko" />
+
+        <TextView
+            android:id="@+id/tv_change_role"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_profile"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/five_dp"
+            android:layout_marginBottom="@dimen/fifteen_dp"
+            android:gravity="center"
+            android:padding="@dimen/ten_dp"
+            android:text="@string/change_role"
+            android:textColor="@color/semi_gray"
+            android:textSize="@dimen/sixteen_sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/amiko" />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_profile"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/five_dp"
+            android:layout_marginEnd="@dimen/ten_dp"
+            android:layout_marginBottom="@dimen/fifteen_dp"
+            android:visibility="gone"
+            android:gravity="center_vertical"
+            android:padding="@dimen/ten_dp">
+
+            <ImageView
+                android:id="@+id/iv_notes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_verified" />
+
+            <TextView
+                android:id="@+id/tv_verified"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/five_dp"
+                android:layout_marginTop="@dimen/one_dp"
+                android:layout_toEndOf="@+id/iv_notes"
+                android:gravity="center"
+                android:text="@string/verified"
+                android:textColor="@color/green"
+                android:textSize="@dimen/sixteen_sp"
+                android:textStyle="bold"
+                app:fontFamily="@font/amiko" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/login_back_strap"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sixty_five_dp"
+        android:paddingStart="@dimen/ten_dp"
+        android:paddingEnd="@dimen/ten_dp">
+
+        <TextView
+            android:id="@+id/tv_drop_count"
+            android:layout_width="@dimen/forty_dp"
+            android:layout_height="@dimen/forty_dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/textview_count_background"
+            android:fontFamily="@font/amiko"
+            android:gravity="center"
+            android:maxLength="3"
+            android:maxLines="1"
+            android:text="#18"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/fourteen_sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_post_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/ten_dp"
+            android:layout_toEndOf="@+id/tv_drop_count"
+            android:fontFamily="@font/amiko"
+            android:gravity="center"
+            android:text="M21 9JW"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/eighteen_sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/ll_time"
+            android:layout_width="@dimen/hundred_dp"
+            android:layout_height="@dimen/thirty_five_dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:background="@drawable/ontime_circle_background"
+            android:elevation="@dimen/five_dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/twenty_dp"
+                android:layout_height="@dimen/twenty_dp"
+                android:src="@drawable/ic_watch" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/five_dp"
+                android:fontFamily="@font/amiko"
+                android:gravity="center"
+                android:text="08:19"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sixteen_sp" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/ten_dp"
+            android:layout_toStartOf="@+id/ll_time"
+            android:fontFamily="@font/amiko"
+            android:gravity="center"
+            android:text="06:00 - 09:00"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sixteen_sp" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sixty_five_dp"
+        android:background="@drawable/orders_rounded_corner"
+        android:paddingStart="@dimen/ten_dp"
+        android:paddingEnd="@dimen/ten_dp">
+
+        <TextView
+            android:id="@+id/tv_delivery_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/background_delivery_type_corner"
+            android:gravity="center"
+            android:paddingStart="@dimen/ten_dp"
+            android:paddingTop="@dimen/five_dp"
+            android:paddingEnd="@dimen/ten_dp"
+            android:paddingBottom="@dimen/five_dp"
+            android:text="@string/delivery"
+            android:textAllCaps="true"
+            android:textColor="@color/delivery_type_color"
+            android:textSize="@dimen/fourteen_sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/amiko" />
+
+        <TextView
+            android:id="@+id/tv_service_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/ten_dp"
+            android:layout_marginEnd="@dimen/ten_dp"
+            android:layout_toEndOf="@+id/tv_delivery_type"
+            android:fontFamily="@font/amiko"
+            android:gravity="center"
+            android:text="Room of Choice"
+            android:textColor="@color/delivery_type_color"
+            android:textSize="@dimen/sixteen_sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/amiko"
+            android:gravity="center"
+            android:text="Julian Bowen"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sixteen_sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/seventy_dp"
+        android:background="@color/orders_back_strap"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="@dimen/forty_dp"
+                android:layout_height="@dimen/forty_dp"
+                android:src="@drawable/ic_route_time" />
+
+            <LinearLayout
+                android:layout_width="@dimen/eighty_dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/five_dp"
+                android:background="@drawable/route_circle_background"
+                android:elevation="@dimen/five_dp"
+                android:gravity="center"
+                android:paddingTop="@dimen/five_dp"
+                android:paddingBottom="@dimen/five_dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/five_dp"
+                    android:fontFamily="@font/amiko"
+                    android:gravity="center"
+                    android:text="30"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sixteen_sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/three_dp"
+                    android:fontFamily="@font/amiko"
+                    android:gravity="center"
+                    android:text="mins"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/fourteen_sp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/five_dp"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/five_dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="@dimen/thirty_five_dp"
+                android:layout_height="@dimen/thirty_five_dp"
+                android:src="@drawable/ic_time_to_deliver" />
+
+
+            <LinearLayout
+                android:layout_width="@dimen/eighty_dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/five_dp"
+                android:background="@drawable/route_circle_background"
+                android:elevation="@dimen/five_dp"
+                android:gravity="center"
+                android:paddingTop="@dimen/five_dp"
+                android:paddingBottom="@dimen/five_dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/five_dp"
+                    android:fontFamily="@font/amiko"
+                    android:gravity="center"
+                    android:text="6"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sixteen_sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/three_dp"
+                    android:fontFamily="@font/amiko"
+                    android:gravity="center"
+                    android:text="mins"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/fourteen_sp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_pre_call"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ninety_dp"
+        android:background="@color/white"
+        android:padding="@dimen/fifteen_dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background_precall_required"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/twenty_dp"
+                android:layout_height="@dimen/twenty_dp"
+                android:src="@drawable/ic_call"
+                app:tint="@color/dark_yellow" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/ten_dp"
+                android:fontFamily="@font/amiko"
+                android:gravity="center"
+                android:text="Customer pre-call required:"
+                android:textColor="@color/dark_yellow"
+                android:textSize="@dimen/fourteen_sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/five_dp"
+                android:fontFamily="@font/amiko"
+                android:gravity="center"
+                android:text="07:14"
+                android:textColor="@color/dark_yellow"
+                android:textSize="@dimen/sixteen_sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

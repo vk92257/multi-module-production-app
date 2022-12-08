@@ -1,0 +1,361 @@
+<resources>
+    <string name="app_name">Pda Native</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <!--login-->
+    <string name="phone_number_text">Enter your phone number to begin</string>
+    <string name="phone_number_hint">Type your number here</string>
+    <string name="validate">Validate</string>
+    <string name="log_in">LOG IN</string>
+    <string name="enter_pin">Please enter your pin</string>
+    <string name="forgot_your_pin"><u>Forgot your pin?</u></string>
+    <string name="terms_conditions"><![CDATA[TERMS & CONDITIONS]]></string>
+    <string name="agree_terms">I agree to the Terms &amp; Conditions</string>
+    <string name="select_role">Select Role</string>
+    <string name="sideman">Sideman</string>
+    <string name="dialog_terms">Terms &amp; Conditions</string>
+    <string name="terms">I agree to: \n  \nProtect the customers personal data.\n \nRecord if a customer provides any new contact details.\n \nNot use a personal device to make contact with customers.\n \nOnly use customer personal data for the purpose of making the delivery/collection.\n
+\nI understand that the misuse of customer data is a breach of the Company GDPR Policy and may result in disciplinary action.</string>
+    <string name="txt_agree">Agree</string>
+    <string name="do_not_agree">Do Not Agree</string>   <!--end-->
+
+    <!--Verify Number-->
+    <string name="verify_number">Verify Number</string>
+    <string name="enter_number">Please enter your registered mobile number to log in.</string>
+    <string name="verify">Verify</string>
+
+    <string name="verify_passcode">Verify Passcode</string>
+    <string name="welcome_txt">Welcome back D145 Aman. \nYou are signing into Route B-005. \nEnter the passcode issued to your number *******856 to continue.</string>
+    <string name="verify_passcode_hint">Type your passcode here</string>
+
+    <string name="verify_vehicle_reg">Vehicle Reg. Number</string>
+    <string name="enter_reg_number">Please enter vehicle registration number to continue.</string>
+    <string name="verify_reg_hint">Type your registration number here</string>
+
+
+    <!--logged in emp-->
+    <string name="welcome">Welcome</string>
+    <string name="logged_in_users">Logged In Users</string>
+    <string name="pre_checks">Proceed To Pre-Checks</string>
+    <string name="add_another_user">Add Another User</string>
+    <string name="driver">Driver</string>
+    <string name="change_role"><u>Change Role</u></string>
+    <string name="verified">Verified</string>
+    <string name="try_again">Try Again</string>
+    <string name="login_successful">Login Successful</string>
+    <string name="done">Done</string>
+
+
+    <!--Reset pin -->
+    <string name="reset_pin">RESET PIN</string>
+    <string name="verification_code_text">Please enter the verification code sent to<br>*******7655</br></string>
+    <string name="resend"><u>Re-send verification</u></string>
+    <string name="confirm_pin">Confirm your new pin</string>
+    <string name="enter_new_pin">Please enter your new pin</string>
+
+
+    <!--permission dialog-->
+    <string name="permissions_manager">Permissions Manager</string>
+    <string name="custom_perm">Custom Intro is a Custom app and requires the following permissions:</string>
+    <string name="allow_permissions">Allow Permissions</string>
+    <string name="enable">Enable</string>
+    <string name="perm_required">Permission is required to send app.</string>
+    <string name="permission">Permission</string>
+    <string name="allow_permission_text">requires the following permissions</string>
+    <string name="phone">Phone</string>
+    <string name="sms">SMS</string>
+    <string name="contact">Contacts</string>
+    <string name="calendar">Calendar</string>
+    <string name="storage">Storage</string>
+    <string name="camera">Camera</string>
+    <string name="audio">Audio</string>
+    <string name="location">Location</string>
+    <string name="phone_state">Phone State</string>
+    <string name="continue_text">Continue</string>
+    <string name="denied_text">DENIED - Open Settings</string>
+    <string name="enable_permission_text">Click Permissions to enable permissions</string>
+    <string name="success_text">Success!</string>
+    <string name="perm_denied">Permission Denied</string>
+    <string name="grant_permission">Grant Permissions</string>
+    <string name="please_wait">Please Wait…</string>
+    <string name="save">Save</string>
+    <string name="update">Update</string>
+    <string name="update_role">UPDATE ROLE</string>
+
+    <!-- dialog strings-->
+    <string name="pin_updation_text">YOUR PIN HAS BEEN UPDATED</string>
+    <string name="pin_description">Please log in using your new pin</string>
+    <string name="number_not_valid">Phone number you entered is not valid</string>
+    <string name="number_empty">Phone number can not be empty</string>
+    <string name="pls_try_again">Please try again.</string>
+    <string name="pin_empty">The pin is not valid</string>
+    <string name="terms_condition_error">You must accept our Terms &amp; Conditions</string>
+    <string name="terms_condition_error_desc">Please read our terms &amp; conditions and tap to accept</string>
+    <string name="select_ur_role">Select your role</string>
+    <string name="confirm_pin_error">The pin you entered does not match</string>
+    <string name="new_pin_empty">The New pin is not valid</string>
+    <string name="vehicle_location">Vehicle Location</string>
+    <string name="unknown">Unknown</string>
+
+
+    <!--scan vehicle and product -->
+    <string name="scan_vehicle_text">Scan your vehicle reg to verify you are collecting the correct vehicle.</string>
+    <string name="scan_item_text">Scan one item of stock to verify your vehicle is loaded correctly.</string>
+    <string name="take_vehicle_image_text">Please take at least 4 pictures of your vehicle, from each angle.</string>
+    <string name="vehicle_walkaround">Vehicle Walkaround</string>
+
+
+    <!--lgv check -->
+    <string name="lgv_check">LGV Check</string>
+    <string name="exterior_check">Exterior Check</string>
+    <string name="pass">Pass</string>
+    <string name="fail">Fail</string>
+    <string name="add_fault">Add Fault</string>
+    <string name="add_exterior_fault">Add Exterior Fault</string>
+    <string name="additional_notes">Additional notes</string>
+    <string name="exterior_check_text">Please check the exterior of the vehicle thoroughly for any signs of damage.</string>
+    <string name="exterior_check_desc">Please check the exterior of the vehicle thoroughly for any signs of damage.</string>
+    <string name="exterior_check_tip">It\'s in your best interest to check thoroughly!</string>
+
+    <string name="fuel_check_desc">Please check the vehicle fuel level.</string>
+    <string name="fuel_check_tip">It\'s right there when you start up the van!</string>
+
+    <string name="tyre_pressure_desc">Please check the tyre pressures on all of your vehicle tyres.</string>
+    <string name="tyre_pressure_tip">Pressures should be around 42psi</string>
+    <string name="vehicle_fault_desc">Please check the vehicle for any operational faults (brakes, etc).</string>
+    <string name="vehicle_fault_tip">Errors often appear on the instrument cluster.</string>
+    <string name="interior_check_desc">Please check the vehicle for rubbish, mud, and general untidiness.</string>
+    <string name="interior_check_tip">Don\'t be afraid to log a dirty van - it\'s not your fault!</string>
+    <string name="exterior_check_title">Exterior Check</string>
+    <string name="fuel_title">Fuel</string>
+    <string name="tyre_pressure_title">Tyre Pressures</string>
+    <string name="vehicle_fault">Vehicle Faults</string>
+    <string name="interior_title">Interior Cleanliness</string>
+    <string name="exterior_fault_title">Add Exterior Fault</string>
+    <string name="fuel_fault_title">Add Fuel Fault</string>
+    <string name="tyre_pressure_fault_title">Add Tyre Pressures Fault</string>
+    <string name="vehicle_fault_title">Add Vehicle Fault</string>
+    <string name="interior_fault_title">Add Interior Cleanliness Fault</string>
+    <string name="fault_text">Please log the fault\'s you have found.</string>
+    <string name="summary">Summary</string>
+    <string name="info_correct_text">Is all of this information correct?</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="faulty_component">Faulty Component</string>
+    <string name="fault">Fault</string>
+    <string name="priority">Priority</string>
+    <string name="fault_logged">Fault Logged</string>
+    <string name="additional_note">Additional Notes</string>
+    <string name="log_another_fault">Log Another Fault</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="photo_text">Please take photograph of this fault</string>
+
+
+    <!--pre-route chcek-->
+    <string name="pre_route_check">Pre-route Check</string>
+    <string name="satnav_check_title">SAT NAV &amp; CHARGING PACK</string>
+    <string name="satnav_check_desc">Have you collected your sat nav\nand charging pack?</string>
+    <string name="satnav_fault_title">SAT NAV FAULT REPORT</string>
+    <string name="satnav_fault_desc">Please report the reason why you haven\'t collected your sat nav.</string>
+
+
+    <!--home bottom menu-->
+    <string name="message">Message</string>
+    <string name="route_update">Route Update</string>
+    <string name="app_update">App Update</string>
+    <string name="floating_button">floating button</string>
+    <string name="activity">Activity</string>
+    <string name="bjs">BJS</string>
+    <string name="pda">PDA</string>
+    <string name="delivery">Delivery</string>
+    <string name="route">Route</string>
+    <string name="device">Device</string>
+    <string name="other">OTHER</string>
+
+
+    <!-- runsheet-->
+    <string name="order_on_route">orders on your route</string>
+    <string name="six_nine">06:00\n09:00</string>
+    <string name="text_mobile"><u>07696584623</u></string>
+    <string name="text_home"><u>012136589456</u></string>
+    <string name="not_included">Not Included</string>
+    <string name="collect_disposal">Collect Disposal</string>
+    <string name="disassembly">Disassembly</string>
+    <string name="included">Included</string>
+    <string name="assembly">Assembly</string>
+    <string name="room_of_choice">Room of Choice</string>
+    <string name="packaging_removed">Packaging Removed</string>
+    <string name="items_unpacked">Items Unpacked</string>
+    <string name="delivery_point">Delivery Point</string>
+    <string name="two_man">Two-Man</string>
+    <string name="standard">Standard</string>
+    <string name="service_level">Service Level</string>
+    <string name="service_type">Service Type</string>
+    <string name="last_visit">LAST VISIT:</string>
+    <string name="getting_customer">GETTING TO THE CUSTOMER</string>
+    <string name="update_eta">UPDATE ETA</string>
+    <string name="further_information">Further Information</string>
+    <string name="reason_update_eta">Reason for change of eta</string>
+    <string name="back">Back</string>
+    <string name="close">Close</string>
+    <string name="update_eta_text">Updating the ETA for this order will automatically update the ETA\'s for all order on your route</string>
+    <string name="running_late_text">Running 5mins late</string>
+    <string name="log_manual">Log Manual P.o.d</string>
+    <string name="return_to_base">Return to base</string>
+    <string name="odometer_reading">Odometer Reading</string>
+    <string name="vehicle_walk_text">Add vehicle walk-around photos</string>
+    <string name="cancel">Cancel</string>
+    <string name="check_return_base">I confirm that there are no defects with my vehicle.</string>
+    <string name="site_parked">what site is your van parked at?</string>
+    <string name="title_activity_dummy_compose">DummyComposeActivity</string>
+
+    <string name="passcode_sent_message">We have sent a route passcode to your\nregistered number, please enter this\npasscode to continue</string>
+    <string name="notificationScreenTitle">Notification</string>
+    <string name="temp">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
+    <string name="callToAction">Call to Action</string>
+    <string name="markAsRead">Mark as Read</string>
+    <string name="show">Show</string>
+
+    <!--Driver login confirmation -->
+    <string name="login_using_number">Please log in using your registered mobile number</string>
+    <string name="enter_phone_number">Enter your phone number</string>
+
+    <!--Route Assign Confirmation-->
+
+
+    <!-- Driver Sign in Error Screen-->
+    <string name="sign_in_error_info_message">Route 13/01 B-002 requires\n1 driver and 2 sidemen</string>
+    <string name="sing_in_error_req_message">You have added 1 driver and\n1 sidemen</string>
+    <string name="sign_in_error_buttons_info">Please tap \'add another user\' to add an\nadditional sideman, or tap \'continue\'\nto proceed to pre-checks and\nadd the sideman later.</string>
+
+    <!-- Driver Sign in Scree-->
+    <string name="terms_and_condition"><![CDATA[Terms & Condition]]></string>
+
+    <!-- Sign in Successful Screen-->
+    <string name="successful">successfully</string>
+    <string name="logged_in">logged in </string>
+    <string name="hang_tight">Hang tight for the next step…</string>
+    <string name="vehicle_prechecs_message">vehicle pre-checks</string>
+
+    <!--Passcode Verification Screen-->
+    <string name="route_passcode">route passcode</string>
+    <string name="skip_this_step">SKIP THIS STEP</string>
+    <string name="add_your_photo">ADD YOUR PHOTO</string>
+    <string name="contct_dh">CONTACT DH</string>
+    <string name="your_activity">YOUR ROUTE</string>
+    <string name="you_are_signing_into">You are signing in to route</string>
+    <string name="remove">FINISHED</string>
+
+    <!--Verify Vehicle-->
+    <string name="add_vehicle_reg">add vehicle reg</string>
+    <string name="tap_to_scan">Tap to scan</string>
+    <string name="enter_vehicle_reg_number">ENTER VEHICLE REG MANUALLY</string>
+    <string name="verify_vehicle">verify vehicle</string>
+
+    <!--Scan Window-->
+    <string name="add_manually">ADD MANUALLY</string>
+    <string name="scanning_vehicle_message">Having problems scanning your vehicle?</string>
+
+    <!--Locate Vehicle -->
+    <string name="locate_vehicle"> LOCATE VEHICLE </string>
+    <string name="van_location">VAN LOCATION</string>
+    <string name="distance">DISTANCE</string>
+    <string name="direction_to_your_vehicle">DIRECTION TO YOUR VEHICLE</string>
+    <string name="found_my_van">I HAVE FOUND MY VAN</string>
+    <string name="verified_your_vehicle">You have successfully Verified your vehicle.</string>
+
+    <!--  Arrived At Your Vehicle  -->
+    <string name="arrive_at_your_vehicle">you have arrived at your</string>
+    <string name="vehicle">vehicle</string>
+    <string name="scan_and_verify_vehicle_reg">Scan your vehicle reg to verify you are collecting the correct vehicle.</string>
+
+    <!--Vehicle Registration Error screen -->
+    <string name="vehicleRegistrationErrorMessage">THERE WAS A PROBLEM SCANNING THE VEHICLE REGISTRATION</string>
+    <string name="vehicleRegistrationErrorInfo">Please ensure the vehicle reg is in focus.</string>
+    <string name="havingProblem">Having problems?</string>
+    <!-- Pre- Route -Check  Exit Damage Log -->
+    <string name="exitDamageLogErrorTitle">THERE WAS A PROBLEM SCANNING THE VEHICLE REGISTRATION</string>
+    <string name="exitDamageLogErrorInfo">Please ensure the vehicle reg is in focus.</string>
+
+    <!-- Damage Log Error -->
+    <string name="exitDamageLog">YOU ARE EXITING THE DAMAGE LOG</string>
+    <string name="exit_confirmation">Are you sure you want to do this?</string>
+    <string name="yes_exit">YES, EXIT</string>
+
+    <!-- Verify Stock - Manual Scan -->
+    <string name="add_stock_barcode">ADD STOCK BARCODE</string>
+    <string name="enter_stock_barcode_manually">ENTER STOCK BARCODE MANUALLY</string>
+    <string name="verify_stock">Verify stock</string>
+
+    <!-- Verify Stock - Scan Error Screen -->
+    <string name="stockScanErrorTitle">THERE WAS A PROBLEM SCANNING THIS ITEM</string>
+    <string name="stockScanErrorInfo">Please ensure the barcode is in focus.</string>
+
+    <!-- Verify Stock - Successfully verified stock -->
+    <string name="verified_your_stock">You have successfully Verified your stock.</string>
+    <string name="save_continue">SAVE &amp; CONTINUE</string>
+
+
+    <!--Log Damage -->
+    <string name="log_damage">Log Damage</string>
+    <string name="log_damage_additional_notes">Additional notes</string>
+    <string name="take_photos_damage">Please take photos of the damage</string>
+    <string name="string_next">Next</string>
+    <string name="vehicle_damage">Vehicle Damage</string>
+    <string name="image_preview">Image Preview</string>
+    <string name="damage_component">Damaged Component</string>
+    <string name="walk_around_complete">Complete!</string>
+    <string name="additional_info">Additional Information</string>
+    <string name="vehicle_walk_around">Vehicle Walk Around</string>
+    <string name="tech_tools">Tech &amp; Tools</string>
+    <string name="delete_damage_entry_title">Delete Damage Entry</string>
+    <string name="damage_exit">You are exiting the damage log </string>
+    <string name="delete_confirmation">Yes, Delete</string>
+    <string name="picture">Picture</string>
+    <string name="delete_image">Delete Image</string>
+    <string name="damage_exit_confirmation">Yes, Exit</string>
+    <string name="take_vehicle_photo">Please take at least 4 pictures of your\nvehicle, from each angle.</string>
+    <string name="walk_around_photo">If you find any damage, please log\nusing the \'Damage\' button.</string>
+
+    <!--    Sat Nav Scan Screen -->
+    <string name="scan_sat_nav">Scan your sat nav</string>
+    <string name="route_require_sat_nav">Your route requires a sat nav.</string>
+
+
+    <!--Sat Nav Add Manual Screen -->
+    <string name="sat_nav">Sat Nav</string>
+    <string name="enter_asset_id">ENTER ASSET ID MANUALLY</string>
+    <string name="add_asset_id">ADD ASSET ID</string>
+
+    <!--Sat Nav Scan Error  Screen -->
+    <string name="sat_nav_scan_error_title">THE BARCODE CANNOT BE SCANNED</string>
+    <string name="sat_nav_scan_error_message">Please ensure the bar code is in focus.</string>
+    <string name="successfully_sat_nav">You have successfully Verified your sat nav.</string>
+    <string name="tap_to_rescan">Tap to rescan</string>
+
+    <!--Sat Nav Summary Screen-->
+    <string name="take_photos_sat_nav">Please take photo/s of your sat nav</string>
+
+    <!-- Assembly kit scan screen-->
+    <string name="assembly_kit_title">Assembly Kit</string>
+    <string name="scan_your_assembly_kit">scan your assembly kit</string>
+    <string name="route_contain_assembly">Your route contains assembly.</string>
+
+    <!--Assembly kit verification successful screen-->
+    <string name="assembly_kit_verification_success">You have successfully Verified your assembly kit.</string>
+
+    <!--    Permission Screen -->
+    <string  name="permission_screen_title">Permissions</string>
+    <!--   Default App Permission Screen -->
+    <string  name="default_permission_screen_title">Default Permissions</string>
+</resources>

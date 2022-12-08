@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.25">
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="bottom"
+            android:src="@drawable/bjssmall" />
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="15dp"
+            android:src="@drawable/ic_arrow_back"
+            android:visibility="visible"
+            app:tint="@color/black" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.09"
+        android:background="@color/login_back_strap"
+        android:gravity="center"
+        android:text="YOUR ROUTE "
+        android:textColor="@color/white"
+        android:textSize="@dimen/twenty_two_sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/amiko" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.46"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cyan_grey"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/thirty_dp"
+                android:paddingBottom="@dimen/thirty_dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/light_brown"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/ten_dp"
+                    android:paddingTop="@dimen/seven_dp"
+                    android:paddingRight="@dimen/ten_dp"
+                    android:paddingBottom="@dimen/seven_dp"
+                    android:text="ROUTE "
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sixteen_sp"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/amiko" />
+
+                <TextView
+                    android:id="@+id/tv_route_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/eight_dp"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/eight_dp"
+                    android:paddingBottom="@dimen/five_dp"
+                    android:text="13/01 B-022"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/twenty_four_sp"
+                    app:fontFamily="@font/amiko" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/thirty_dp"
+                android:paddingBottom="@dimen/thirty_dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/light_brown"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/ten_dp"
+                    android:paddingTop="@dimen/seven_dp"
+                    android:paddingRight="@dimen/ten_dp"
+                    android:paddingBottom="@dimen/seven_dp"
+                    android:text="DEVICE "
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sixteen_sp"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/amiko" />
+
+                <TextView
+                    android:id="@+id/tv_device_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/eight_dp"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/eight_dp"
+                    android:paddingBottom="@dimen/five_dp"
+                    android:text="B008"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/twenty_four_sp"
+                    app:fontFamily="@font/amiko" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/fm_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true">
+
+
+            <androidx.camera.view.PreviewView
+                android:id="@+id/preview_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.bjs.pdanative.common.ScannerOverlay
+                android:id="@+id/scan_overlay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#44000000"
+                app:line_color="#7323DC"
+                app:line_speed="6"
+                app:line_width="5"
+                app:square_height="200"
+                app:square_width="450" />
+
+            <TextView
+                android:id="@+id/txt_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/amiko"
+                android:gravity="top"
+                android:text="SCAN YOUR ROUTE TO CONTINUE"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white"
+                android:textSize="@dimen/twelve_sp" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:orientation="vertical"
+        android:padding="@dimen/twenty_dp"
+        android:visibility="visible">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_validate"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/seventy_dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/twenty_dp"
+            android:backgroundTint="@color/bjs"
+            android:gravity="center"
+            android:padding="@dimen/twelve_dp"
+            android:text="SHUNTER LOG IN"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/twenty_two_sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/amiko"
+            app:iconGravity="textEnd"
+            app:iconTint="@color/white"
+            app:shapeAppearanceOverlay="@style/buttonShape" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
